@@ -1,17 +1,16 @@
-import { Avatar, Box, Button, Typography } from "@mui/material"
-import { StyledTextField, LoginContainer } from "./style"
+import { Avatar, Box, Button, TextField, Typography } from "@mui/material"
 
 export const ResetForm = () => {
   return (
     <>
-      <LoginContainer>
+      <Box>
         <Avatar sx={{ width: 64, height: 64, marginBottom: 1 }}/>
      
         <Typography component="h1" variant="h5">
           Сбросьте пароль, чтобы продолжить!
         </Typography>
       
-        <StyledTextField
+        <TextField
           variant="outlined"
           margin="normal"
           required
@@ -32,7 +31,7 @@ export const ResetForm = () => {
             Сбросить
           </Button>
         </Box>
-      </LoginContainer>
+      </Box>
     </>
   )
 }

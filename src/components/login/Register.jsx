@@ -1,17 +1,16 @@
 import { Avatar, Box, Button, TextField, Typography } from "@mui/material"
-import { StyledTextField, LoginContainer } from "./style"
 
 export const RegisterForm = () => {
   return (
     <>
-      <LoginContainer>
+      <Box>
         <Avatar sx={{ width: 64, height: 64, marginBottom: 1 }}/>
       
         <Typography component="h1" variant="h5">
           Зарегистрируйтесь, чтобы продолжить!
         </Typography>
       
-        <StyledTextField
+        <TextField
           variant="outlined"
           margin="normal"
           required
@@ -22,7 +21,7 @@ export const RegisterForm = () => {
           autoComplete="email"
           autoFocus
         />
-        <StyledTextField
+        <TextField
           variant="outlined"
           margin="normal"
           required
@@ -33,7 +32,7 @@ export const RegisterForm = () => {
           id="password"
           autoComplete="current-password"
         />
-        <StyledTextField
+        <TextField
           variant="outlined"
           margin="normal"
           required
@@ -54,7 +53,7 @@ export const RegisterForm = () => {
             Войти
           </Button>
         </Box>
-      </LoginContainer>
+      </Box>
     </>
   )
 }
