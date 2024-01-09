@@ -1,4 +1,4 @@
-import { TextField, Box, styled } from "@mui/material";
+import { TextField, Box, styled, Button } from "@mui/material";
 
 export const StyledTextField = styled(TextField)(({theme}) => ({
   "& .MuiOutlinedInput-root": {
@@ -8,10 +8,18 @@ export const StyledTextField = styled(TextField)(({theme}) => ({
 }))
 
 export const LoginContainer = styled(Box)(({theme}) => ({
-  margin: "0 auto",
+  margin: "50px auto",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  maxWidth: "500px"
+  maxWidth: "500px",
+}))
+
+export const LoginButton = styled(Button)(({theme}) => ({
+  marginTop: "14px",
+  padding: "12px 16px",
+  borderRadius: "12px",
+  fontSize: "1.1rem",
+  fontWeight: "bold"
 }))
 

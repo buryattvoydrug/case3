@@ -1,5 +1,5 @@
-import { Avatar, Box, Button, Typography } from "@mui/material"
-import { StyledTextField, LoginContainer } from "./style"
+import { Avatar, Typography } from "@mui/material"
+import { StyledTextField, LoginContainer, LoginButton } from "./style"
 
 export const ResetForm = () => {
   return (
@@ -7,7 +7,7 @@ export const ResetForm = () => {
       <LoginContainer>
         <Avatar sx={{ width: 64, height: 64, marginBottom: 1 }}/>
      
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h4" textAlign="center">
           Сбросьте пароль, чтобы продолжить!
         </Typography>
       
@@ -22,16 +22,14 @@ export const ResetForm = () => {
           autoComplete="email"
           autoFocus
         />
-        <Box height={60}>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-          >
-            Сбросить
-          </Button>
-        </Box>
+        <LoginButton
+          type="submit"
+          fullWidth
+          variant="contained"
+          color="primary"
+        >
+          Сбросить
+        </LoginButton>
       </LoginContainer>
     </>
   )
